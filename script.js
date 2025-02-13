@@ -9,7 +9,7 @@ function populationGrowth(){
     let regionOfTheMonster = prompt("Enter the region of the monster.");
     let nameOfTheMonster = prompt("Enter the name of the monster.");
     
-    let informationOfTheMonster = (regionOfTheMonster +" "+ nameOfTheMonster ).toUpperCase();
+    let informationOfTheMonster = (regionOfTheMonster +" "+ nameOfTheMonster).toUpperCase();
 
     document.getElementById("result").innerHTML = "After " + timeInHours + " hours," + " the population of " + informationOfTheMonster + " has risen to " + finalP + "!";
 }
