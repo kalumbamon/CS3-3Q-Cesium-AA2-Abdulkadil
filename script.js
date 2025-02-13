@@ -3,8 +3,10 @@ function ohno(){
     let r = parseFloat(prompt("RATEEEEEEEEE"));
     let t = parseFloat(prompt("TIME MOOO"));
 
-    let pFinal = Math.round(pInitial * Math.pow(Math.E, r*t));
+    let pFinal = Math.round(pInitial * Math.E ** (r*t));
     let regionOfTheMonster = prompt("region mo");
     let nameOfTheMonster = prompt("NAMEEEEE");
-    let halaaaa
+    let ipabigletter = (regionOfTheMonster +""+ nameOfTheMonster ). toUpperCase();
+
+    document.getElementById("result").innerHTML = "After " + t + " hours," + " the population of " + ipabigletter + " has risen to " + pFinal;
 }
